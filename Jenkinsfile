@@ -26,7 +26,7 @@ pipeline{
   steps{
   script
   {
-  print abc= env.abc
+  print "abc= $(abc)"
   
   }
   }
