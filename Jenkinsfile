@@ -1,19 +1,3 @@
-pipeline {
+@library ("roboshop") _
 
-  agent 
-  {
-  label 'ansible'
-  }
-
-  stages {
-
-    stage('Hello') {
-      steps {
-        echo 'Hello World'
-      }
-    }
-
-  }
-
-}
-    
+test()
