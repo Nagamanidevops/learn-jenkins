@@ -26,7 +26,7 @@ pipeline{
   steps{
   script
   {
-  print " abc = $(abc)"
+  print  abc = $(abc)
   
   }
   }
