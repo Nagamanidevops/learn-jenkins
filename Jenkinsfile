@@ -10,6 +10,7 @@ pipeline{
     script
     {
       def abc = "hello"
+      env.am = "hi"
       def a = 10
 
       print  "abc = ${abc}"
@@ -19,6 +20,20 @@ pipeline{
     }
     }
     }
+    
+  stage('test2')
+  {
+  steps{
+  script
+  {
+  print abc= env.abc
+  
+  }
+  }
+ 
+  }
+  
+  
   }
 
 }
